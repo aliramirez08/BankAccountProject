@@ -34,21 +34,21 @@ java BankAccountTest
 ## Java Source Code
 
 ### BankAccount.java
-![BankAccount1](screenshots/BankAccount1.png)
-![BankAccount2](screenshots/BankAccount2.png)
+![BankAccount1](Screenshots/BankAccount1.png)
+![BankAccount2](Screenshots/BankAccount2.png)
 
 ### CheckingAccount.java
-![CheckingAccount](screenshots/CheckingAccount.png)
-![CheckingAccount2](screenshots/CheckingAccount2.png)
+![CheckingAccount](Screenshots/CheckingAccount.png)
+![CheckingAccount2](Screenshots/CheckingAccount2.png)
 
 ### BankAccountTest.java
-![BankAccountTest](screenshots/BankAccountTest.png)
+![BankAccountTest](Screenshots/BankAccountTest.png)
 
 ## JUnit Source Code
-![BankAccountJUnit](screenshots/BankAccountJUnit.png)
+![BankAccountJUnit](Screenshots/BankAccountJUnit.png)
 
 ## Output
-![Output](screenshots/Output.png)
+![Output](Screenshots/Output.png)
 
 ## Repo
 
