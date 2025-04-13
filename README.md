@@ -28,3 +28,28 @@ This Java project models a basic bank account system using object-oriented princ
 # From src folder (if using terminal)
 javac BankAccount.java CheckingAccount.java BankAccountTest.java
 java BankAccountTest
+```
+
+
+## Java Source Code
+
+### BankAccount.java
+![BankAccount1](screenshots/BankAccount1.png)
+![BankAccount2](screenshots/BankAccount2.png)
+
+### CheckingAccount.java
+![CheckingAccount](screenshots/CheckingAccount.png)
+![CheckingAccount2](screenshots/CheckingAccount2.png)
+
+### BankAccountTest.java
+![BankAccountTest](screenshots/BankAccountTest.png)
+
+## JUnit Source Code
+![BankAccountJUnit](screenshots/BankAccountJUnit.png)
+
+## Output
+![Output](screenshots/Output.png)
+
+## Repo
+
+
