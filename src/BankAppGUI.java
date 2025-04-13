@@ -15,7 +15,7 @@ public class BankAppGUI {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 300);
 
-        JTextArea display = new JTextArea(account.accountSummary());
+        JTextArea display = new JTextArea("Account Summary: \n");
         display.setEditable(false);
 
         JTextField amountField = new JTextField(10);
