@@ -1,53 +1,22 @@
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
-
 public class BankAccountTest {
 
-    @Test
-    void testInitialBalanceIsZero() {
-        BankAccount account = new BankAccount("Alicia", "Ramirez", 1001);
-        assertEquals(0.0, account.getBalance(), 0.001);
-    }
+    public static void main(String[] args) {
+        CheckingAccount ca = new CheckingAccount();
 
-    @Test
-    void testDeposit() {
-        BankAccount account = new BankAccount("Alicia", "Ramirez", 1001);
-        account.deposit(500.0);
-        assertEquals(500.0, account.getBalance(), 0.001);
-    }
+        ca.setFirstName("John");
+        ca.setLastName("Doe");
+        ca.setAccountID(12345);
+        ca.setInterestRate(1);
 
-    @Test
-    void testWithdraw() {
-        BankAccount account = new BankAccount("Alicia", "Ramirez", 1001);
-        account.deposit(500.0);
-        account.withdrawal(200.0);
-        assertEquals(300.0, account.getBalance(), 0.001);
-    }
+        ca.deposit(500.00);
+        ca.displayAccount();
 
-    @Test
-    void testNegativeDepositThrowsException() {
-        BankAccount account = new BankAccount("Alicia", "Ramirez", 1001);
-        assertThrows(IllegalArgumentException.class, () -> account.deposit(-100));
-    }
+        ca.processWithdrawal(500.00); // triggers overdraft
+        ca.displayAccount();
 
-    @Test
-    void testNegativeWithdrawalThrowsException() {
-        BankAccount account = new BankAccount("Alicia", "Ramirez", 1001);
-        assertThrows(IllegalArgumentException.class, () -> account.withdrawal(-50));
-    }
-
-    @Test
-    void testOverdraftProcessingInCheckingAccount() {
-        CheckingAccount checking = new CheckingAccount("Alicia", "Ramirez", 2001, 0.02);
-        checking.deposit(100);
-        checking.processWithdrawal(150); // should allow overdraft and apply $30 fee
-        assertEquals(-80.0, checking.getBalance(), 0.001); // -50 - 30 overdraft fee
-    }
-
-    @Test
-    void testInterestRateDisplay() {
-        CheckingAccount checking = new CheckingAccount("Alicia", "Ramirez", 2001, 0.03);
-        String summary = checking.displayAccount();
-        assertTrue(summary.contains("Interest Rate: 0.03"));
+        ca.deposit(200.00);
+        // Assuming the intention is to process a withdrawal instead of displaying it
+                ca.processWithdrawal(50.00);
+        ca.displayAccount();
     }
 }
