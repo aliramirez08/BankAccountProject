@@ -10,7 +10,6 @@ This Java project models a basic bank account system using object-oriented princ
 - `CheckingAccount.java` – Inherits from `BankAccount`, adds interest rate, and handles overdrafts with a $30 fee.
 - `BankAccountTest.java` – Contains the `main` method to test account creation, transactions, and overdraft scenarios.
 
-## How to Run
 
 ## Prerequisites
 
@@ -28,3 +27,28 @@ This Java project models a basic bank account system using object-oriented princ
 # From src folder (if using terminal)
 javac BankAccount.java CheckingAccount.java BankAccountTest.java
 java BankAccountTest
+```
+
+
+## Java Source Code
+
+### BankAccount.java
+![BankAccount1](Screenshots/BankAccount1.png)
+![BankAccount2](Screenshots/BankAccount2.png)
+
+### CheckingAccount.java
+![CheckingAccount](Screenshots/CheckingAccount.png)
+![CheckingAccount2](Screenshots/CheckingAccount2.png)
+
+### BankAccountTest.java
+![BankAccountTest](Screenshots/BankAccountTest.png)
+
+## JUnit Source Code
+![BankAccountJUnit](Screenshots/BankAccountJUnit.png)
+
+## Output
+![Output](Screenshots/Output.png)
+
+## Repo
+![Repo](Screenshots/Repo.png)
+
