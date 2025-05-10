@@ -40,15 +40,11 @@ java BankAccountTest
 ![CheckingAccount](Screenshots/CheckingAccount.png)
 ![CheckingAccount2](Screenshots/CheckingAccount2.png)
 
-### BankAccountTest.java
-![BankAccountTest](Screenshots/BankAccountTest.png)
 
-## JUnit Source Code
-![BankAccountJUnit](Screenshots/BankAccountJUnit.png)
 
 ## Output
-![Output](Screenshots/Output.png)
+
 
 ## Repo
-![Repo](Screenshots/Repo.png)
+
 
